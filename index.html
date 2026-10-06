@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce los programas técnicos de AuraTech y registra tu interés en estudiar.">
+    <title>AuraTech | Instituto Superior</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <header>
+
+        <nav class="contenedor menu" aria-label="Menú principal">
+            <a href="#inicio" class="logo">
+                <span aria-hidden="true">AT</span> AuraTech</a>
+            <div class="enlaces">
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#programas">Programas</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#registro" class="boton">Regístrate</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="portada">
+            <div class="contenedor presentacion">
+                <div>
+                    <p class="subtitulo">APRENDE HOY, CONSTRUYE TU MAÑANA</p>
+                    <h1>Forma tu futuro con <span>educación de calidad</span></h1>
+                    <p class="resumen">Descubre una formación técnica práctica para desarrollar tus habilidades y dar el siguiente paso en tu vida profesional.</p>
+                    <div class="botones">
+                        <a href="#programas" class="boton">Ver nuestros programas</a>
+                        <a href="#contacto" class="boton borde">Contáctanos</a>
+                    </div>
+                </div>
+                <img src="imagenes/estudiantes.jpg" class="foto" width="800" height="600" alt="Estudiantes compartiendo una jornada de aprendizaje">
+            </div>
+        </section>
+
+        <section id="nosotros" class="contenedor seccion nosotros">
+            <div>
+                <p class="subtitulo">CONOCE AuraTech</p>
+                <h2>Aprender para hacer más.</h2>
+            </div>
+            <p>Somos una propuesta de formación técnica enfocada en el aprendizaje práctico. Nuestros programas reúnen marketing, contabilidad y diseño gráfico para desarrollar proyectos relacionados con el entorno laboral.</p>
+        </section>
+        
+        <section id="beneficios" class="fondo">
+            <div class="contenedor seccion">
+                <div class="titulo">
+                    <p class="subtitulo">TU DESARROLLO NOS IMPORTA</p>
+                    <h2>¿Por qué estudiar con nosotros?</h2>
+                </div>
+
+                <div class="beneficios">
+                    <article class="beneficio">
+                        <img src="imagenes/laboratorio.jpg" alt="Laboratorio">
+                        <h3>Laboratorios y tecnología avanzada</h3>
+                        <p>Aprende con laboratorios y tecnologías de primer nivel orientados a desarrollar tus habilidades profesionales</p>
+                    </article>
+
+                    <article class="beneficio">
+                        <img src="imagenes/certificacion.jpg" alt="Certificaciones Modulares">
+                        <h3>Certificaciones Modulares</h3>
+                        <p>Certificamos tu esfuerzo, desarrollo y compromiso </p>
+                    </article>
+
+                    <article class="beneficio">
+                        <img src="imagenes/horario.jpg" alt="Horarios flexibles">
+                        <h3>Horarios Flexibles</h3>
+                        <p>Total libertad para elegir tus horarios según tu estilo de vida.</p>
+                    </article>
+
+                    <article class="beneficio">
+                        <img src="imagenes/proyectos.jpg" alt="Proyectos reales">
+                        <h3>Proyectos basados en el entorno laboral</h3>
+                        <p>Realizarás proyectos de la vida real para poder reforzar tu camino hacia el entorno laboral.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="programas" class="contenedor seccion">
+            <div class="titulo">
+                <p class="subtitulo">ENCUENTRA TU CAMINO</p>
+                <h2>Nuestros Programas</h2>
+                <p>Elige el programa que despierta tu interés</p>
+            </div>
+
+            <div class="programas">
+                <article class="tarjeta">
+                    <img src="imagenes/marketing.jpg" alt="Marketing" width="500" height="300" loading="lazy">
+                    <div class="texto">
+                        <h3>Marketing</h3>
+                        <p>Aprende a promocionar productos, conocer a tus clientes y crear campañas para redes sociales.</p>
+                        <a href="#registro" class="boton borde" onclick="elegirPrograma('Marketing')">Me interesa</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/contabilidad.jpg" alt="Contabilidad" width="500" height="300" loading="lazy">
+                    <div class="texto">
+                        <h3>Contabilidad</h3>
+                        <p>Aprende a registrar ingresos y gastos, preparar balances y organizar las cuentas de una empresa.</p>
+                        <a href="#registro" class="boton borde" onclick="elegirPrograma('Contabilidad')">Me interesa</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/diseño.jpg" alt="Diseño Gráfico" width="500" height="300" loading="lazy">
+                    <div class="texto">
+                        <h3>Diseño Gráfico</h3>
+                        <p>Aprende a crear logotipos, afiches y diseños digitales para comunicar ideas de forma creativa.</p>
+                        <a href="#registro" class="boton borde" onclick="elegirPrograma('Diseno')">Me interesa</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="registro" class="fondo">
+            <div class="contenedor seccion registro">
+                <div>
+                    <p class="subtitulo">DA EL PRIMER PASO</p>
+                    <h2>Tu próxima etapa empieza aquí.</h2>
+                    <p>Elige una carrera y completa tus datos para registrarte.</p>
+                </div>
+
+                <div class="cuadro">
+                    <h3>Registro de interesados</h3>
+                    <p>Todos los campos son obligatorios</p>
+                    <form id="formRegistro">
+                        <div class="campo">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej.Juanito Pérez" autocomplete="name" minlength="2" maxlength="100" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="correo@correo.com" autocomplete="email" maxlength="120" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="telefono">Celular</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="987654321" inputmode="numeric" autocomplete="tel-national" pattern="9[0-9]{8}" maxlength="9" title="Escribe 9 números, empezando con 9" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="programa">Programa de interés</label>
+                            <select name="programa" id="programa" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Contabilidad">Contabilidad</option>
+                                <option value="Diseno">Diseño Gráfico</option>
+                            </select>
+                        </div>
+
+                        <div class="botones">
+                            <button class="boton" type="submit">Confirmar registro</button>
+                            <button class="boton borde" type="reset">Limpiar</button>
+                        </div>
+                    </form>
+
+                    <p id="alertaExito" class="mensaje" role="status" hidden></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="contenedor pie">
+            <div>
+                <a href="#inicio" class="logo"><span aria-hidden="true">AT</span> AuraTech</a>
+                <p>Instituto de Educación Superior.<br>Formación práctica para tu futuro</p>
+            </div>
+
+            <div>
+                <h2>Contacto</h2>
+                <p>Lima, Perú</p>
+                <a href="#registro">Ir al formulario de registro</a>
+            </div>
+
+            <div>
+                <h2>Explora</h2>
+                <a href="#nosotros">Sobre nosotros</a>
+                <a href="#programas">Nuestros programas</a>
+                <a href="#beneficios">Beneficios</a>
+            </div>
+        </div>
+
+        <p class="contenedor derechos"> © 2026 AuraTech. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
